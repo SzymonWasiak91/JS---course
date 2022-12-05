@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let temp = 100;
+
+      switch (temp) {
+        case -5:
+          console.log("Temperatura jest rowna -5");
+          break;
+        case 0:
+          console.log("Temperatura jest rowna 0");
+          break;
+        case 5:
+          console.log("Temperatura jest rowna 5");
+          break;
+        case 15:
+          console.log("Temperatura jest rowna 15");
+          break;
+        case 20:
+          console.log("Temperatura jest rowna 20");
+          break;
+        default:
+          console.log("Temperatura jest równa dokładnie:", temp);
+      }
+
+      let monthNum = 12;
+      let season = "";
+
+      switch (monthNum) {
+        case 3:
+        case 4:
+        case 5:
+          console.log("Pora rokut to:", (season = "Wiosna"));
+          break;
+        case 6:
+        case 7:
+        case 8:
+          console.log("Pora rokut to:", (season = "Lato"));
+          break;
+        case 9:
+        case 10:
+        case 11:
+          console.log("Pora rokut to:", (season = "Jesień"));
+          break;
+        case 12:
+        case 1:
+        case 2:
+          console.log("Pora rokut to:", (season = "Zima"));
+          break;
+        default:
+          console.log("Nieprawidłowy miesiąc");
+      }
+    </script>
+  </body>
+</html>
