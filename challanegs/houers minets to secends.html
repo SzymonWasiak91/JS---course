@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function konwert(hours, minutes) {
+        let result = hours * 3600 + minutes * 60;
+        return result;
+      }
+      console.log("Czas w sekundach to:", konwert(3, 25));
+      function convertToHours(minuters) {
+        return minuters / 60;
+      }
+      console.log("Minuty na godziny wynik to", convertToHours(120));
+    </script>
+  </body>
+</html>
