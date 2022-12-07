@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let company = {
+            name: "Company name",
+            streat: "Wilcza",
+            city: "Wawa",
+            employees: []
+        }
+
+        function addEmplyee(name,email,job){
+            let newUser = {
+                name: name,
+                email: email,
+                job: job
+            }
+            return newUser;
+        }
+        company.employees.push(addEmplyee("Szymon","test@wp.pl","Tester"));
+        company.employees.push(addEmplyee("Tomek","dev@wp.pl","Develper"));
+        company.employees.push(addEmplyee("Wojtek","ux@wp.pl","UX"));
+        console.log(company)
+
+
+
+
+    </script>
+    
+</body>
+</html>

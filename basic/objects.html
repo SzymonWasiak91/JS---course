@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let house = {
+            //wlasciwosci obiektu a nie zmienne
+            city: "Warszawa",
+            streetName: "Marszałkowska",
+            streeNumber: 12,
+            surfaceArea: 50,
+            height: 30
+        };
+        let bankAccoutn = {
+            user: "Kasia",
+            surname: "Nowak",
+            accountNumber: 12321353412,
+            balance: 100000
+        }
+        console.log(bankAccoutn)
+        console.log(bankAccoutn.balance)
+
+        bankAccoutn.balance = bankAccoutn.balance +9999;
+
+        console.log(bankAccoutn.balance)
+
+        bankAccoutn.country = "Polska";
+        console.log(bankAccoutn)
+
+
+    </script>
+    
+</body>
+</html>
