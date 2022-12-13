@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        function getEmailParts(email){
+            let monkeyId = email.indexOf("@")
+            let parts1 = email.split("@")
+            let name1 = email.substring(0,monkeyId);
+            let l = email.length
+            let x = l - monkeyId
+            let domanin1 = email.substr(x+1,2)
+            let domainId = email.lastIndexOf(".")
+            let domainExt = email.slice(domainId+1) 
+
+            // return parts1
+            return {
+                parts:parts1,
+                name:name1,
+                domanin:domanin1,
+                domainExt: domainExt
+                
+            }
+            }
+
+
+          let t = "kasia@example.com"
+          console.log(getEmailParts(t))
+
+          let t2 = "adam.kowalski@domena.pl"
+          console.log(getEmailParts(t2))
+
+
+
+    </script>
+    
+</body>
+</html>
