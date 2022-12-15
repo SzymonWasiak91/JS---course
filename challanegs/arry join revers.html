@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let arrNames = ["Szymon","Artur","Tomasz","Emil","Ola"];
+
+
+        function combainNames(name,char)
+        
+        {
+            let arrOtherSide = name.reverse()
+            let withJoinChar = arrOtherSide.join(char)
+            return withJoinChar;
+        }
+       
+        console.log(combainNames(arrNames,"-"))
+
+        console.log(combainNames(arrNames,"-").split("-"))
+
+
+
+
+    </script>
+
+    
+</body>
+</html>
