@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+            let soldCars = 1200;
+            let carPrice = 90000;
+
+            let revenue = soldCars * carPrice;
+            console.log("Przychod firy to: " + revenue)
+            let factoryCost = revenue *0.65;
+            console.log("Koszt produkcji to: " + factoryCost)
+            let marketingCost = revenue *0.1;
+            console.log("Koszt marketingu to: " + marketingCost)
+
+            let income = revenue - factoryCost - marketingCost;
+            console.log("Dochod firmy to: " + income)
+            let incomeTax = income * 0.19;
+
+            console.log("Podatek to " + incomeTax)
+
+            let incomeAfterTax = income - incomeTax;
+            console.log("Dochod firmy po podatku to: " + incomeAfterTax)
+            let x = incomeAfterTax / 30000    
+            console.log("Finalnie:" + x)
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
