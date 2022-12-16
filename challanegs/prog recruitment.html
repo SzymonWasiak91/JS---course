@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <script>
+
+
+        function recruitProgrammer(email, yearsExp, level, languages){
+
+                if(level != "mid"){
+                    console.log(email, "nie jest midem, koniec rekrutacji")
+                    return false;
+                }
+               
+                let jsExp = false;
+                let tcExp = false;
+
+                if(languages.indexOf("JavaScript") >= 0) jsExp = true;
+                if(languages.indexOf("TypeScript") >= 0) tcExp = true;
+
+                if(jsExp || tcExp){
+                    if(yearsExp > 1 && yearsExp < 6){
+                    console.log(email, "Łapie sie w zakresie stażu")
+                    return true;
+                }else{
+                    console.log(email, "Jest poza zakresem")
+                }
+                }
+
+              
+            }
+            recruitProgrammer("ania@test.com",4,"mid",["JavaScript","Python"])
+            recruitProgrammer("adam@exmaple.com",2,"junir",["Java"])
+            recruitProgrammer("kasia@domena",7,"senior",["JavaScript","TypeScript"])
+           
+
+
+
+
+       
+            
+        
+       
+    
+  
+
+    </script>
+    
+</body>
+</html>
