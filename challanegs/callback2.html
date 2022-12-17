@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        function filterArr(arr,callback){
+           
+            for(let i = 0;i < arr.length ;i++){
+                let b = arr[i];
+                let a = callback(b)
+               
+                if(a == true) console.log("Wartosc: "+b +" czy jest w zakresie: "+a)
+                
+            }
+        }
+
+        let nameCheck = function(name){
+            if(name.length > 3){
+                return true;
+            }else{
+                return false;
+            }
+        }
+        let numbersCheck = function(liczba){
+            if(liczba < 35){
+                return true;
+            }else{
+                return false;
+            }
+        }
+        filterArr(["Ania","Kasia","Ola","Daniel"],nameCheck);
+        filterArr([10,20,30,40,50],numbersCheck);
+
+
+
+
+    </script>
+    
+</body>
+</html>

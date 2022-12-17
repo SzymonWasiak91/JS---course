@@ -42,6 +42,45 @@
         console.log(result3)
 
         console.log(kalkulateInvestment(2022,0.045))
+
+
+
+        //function expressions
+
+        console.log("-----------------------------")
+        let add10 = function(num){
+            return num + 10;
+        }
+
+        console.log(add10(15))
+    
+        add10 = function(num){
+            let sum = num + 10;
+            console.log(sum)
+            return sum;
+        }
+
+       const sum = add10(20)
+       console.log(sum)
+
+       console.log("-----------------------------")
+
+        function downloadFile(fileName,onComplete,onError){
+            if(fileName.length > 5){
+                onComplete("succes")
+            }else{
+                onError("Error!")
+            }
+        }
+        downloadFile("f.txt",
+        function(str){
+            console.log("OnComplete:",str)
+        },
+        function(str){
+            console.log("Error:",str)
+        })
+
+
     </script>
 </body>
 </html>
