@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        let article = {
+            date: new Date(2030, 12, 01),
+            title: "cos",
+            content: "To moj pierwszy artykuł",
+            tags: ["blog", "lifestyle"],
+            version: 1
+        }
+
+        function validateArticle(art){
+            if(typeof art.title !== "string" || typeof art.content !== "string"){
+                console.log("Zly typ tytulu lub contentu")
+                return false
+            }
+            // if(typeof art.content !== "string"){
+            //     console.log("Zly typ contentu")
+            //     return fales;
+            // }
+            if("title" in art != true){
+                console.log("Brak tytulu w obiekcie")
+                return false
+            }
+            if("content" in art != true){
+                console.log("Brak contentu w obiekcie")
+                return false
+            }
+            console.log("Wszystko ok")
+            return true;
+        }
+
+        validateArticle(article)
+
+
+
+
+    </script>
+    
+</body>
+</html>

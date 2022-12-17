@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let user = {
+        email: "ania@test.pl",
+        membershipCost: 100,
+        numMemebrshipYeasrs: 2,
+        numberOfPosts: 20,
+      };
+
+      function extendMemebrShip(user) {
+        let minYers = 2;
+        let minPosts = 30;
+        let membersshipFlag =
+          user.numMemebrshipYeasrs >= minYers ? true : false;
+        let postsFlag = user.numberOfPosts >= minPosts ? true : false;
+
+        if (membersshipFlag && postsFlag == true) {
+          let cost = user.membershipCost * 0.6;
+          user.membershipCost = cost;
+          console.log("Uzytkownik ma tanszy dostep i wnosi: ", cost);
+        } else if (membersshipFlag && postsFlag == false) {
+          user.membershipCost = 100;
+          console.log("Uzytkownik placi calosc: ", 100);
+        }
+      }
+      extendMemebrShip(user);
+    </script>
+  </body>
+</html>

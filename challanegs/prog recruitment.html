@@ -25,7 +25,12 @@
                 if(languages.indexOf("JavaScript") >= 0) jsExp = true;
                 if(languages.indexOf("TypeScript") >= 0) tcExp = true;
 
-                if(jsExp || tcExp){
+                if(jsExp || tcExp){ if(yearsExp > 1 && yearsExp < 6){
+                    console.log(email, "Łapie sie w zakresie stażu")
+                    return true;
+                }else{
+                    console.log(email, "Jest poza zakresem")
+                }
                     if(yearsExp > 1 && yearsExp < 6){
                     console.log(email, "Łapie sie w zakresie stażu")
                     return true;
