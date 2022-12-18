@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        
+        function nowaFunkcja(){
+            let hours = window.prompt("Ile godzin spedzasz przy komputerze?");
+            if(hours.includes(".")){
+                let a = parseFloat(hours);
+                let d = a / 2 
+                console.log("Siedz mniej przy konpie: " + d)
+                return a / 2;
+            }else{
+                let b = parseInt(hours);
+                let c = b / 2 
+                console.log("Siedz mniej przy konpie: " + c)
+                return c
+            }
+
+        }
+        
+        nowaFunkcja()
+
+
+        // let czesc2 = setInterval(function(){
+        //     console.log(window.innerHeight);
+        //     console.log(window.innerWidth);
+        //     i++
+        // },1000)
+
+    </script>
+    
+</body>
+</html>

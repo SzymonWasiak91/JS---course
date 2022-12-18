@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // alert("Hellow World");
+
+
+        // let userData = prompt("Podaj dowolą liczbe dziesienta");
+        // console.log(parseFloat(userData)+ 2.5)
+
+
+        setTimeout(function(){
+            console.log("Hellow")
+        },1000)
+
+        let num = 0;
+       let intervalId =  setInterval(function(){
+            console.log("Hellow Wrold! " + num)
+            num++
+
+            if(num > 10) clearInterval(intervalId)
+        },2000)
+
+    </script>
+    
+</body>
+</html>
