@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .text-content{
+            border: 1px solid black
+
+        }
+    </style>
+</head>
+<body>
+    <div id="content">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia autem laboriosam repellat eius vero earum expedita nobis in corrupti, iusto dolore possimus est illum, sunt aspernatur deserunt quasi? Laborum, maiores?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat modi ullam, earum cum, cupiditate quam officiis et quibusdam adipisci unde sunt aspernatur sapiente blanditiis, repudiandae perspiciatis vel nihil in expedita.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut impedit est consectetur laudantium consequuntur doloribus debitis assumenda eveniet sed? Soluta aliquid optio reiciendis voluptatem dolores veniam odio non? Soluta, numquam?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, eum! Quo nulla excepturi voluptatum neque, est illum, dignissimos quas nobis tenetur debitis ad perferendis quia itaque adipisci commodi tempore hic.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus harum quidem pariatur sapiente sequi modi quam quibusdam voluptatem dolorum. Est saepe veritatis qui aperiam excepturi quis ad iure quisquam ex!</p>
+        
+      </div>
+    <script>
+
+        let list = document.getElementsByTagName("p")
+        // console.log(list)
+
+        for(let i =0 ;i< list.length ; i++){
+            let el = list[i];
+            el.classList.add("text-content");
+            el.innerHTML += " " + i
+        }
+        let el2 = document.getElementById("content")
+        el2.style.background = "yellow"
+
+    </script>
+</body>
+</html>
