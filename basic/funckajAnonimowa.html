@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //    let add10 = function(num){
+      //     return num + 10;
+      //    }
+
+      //    console.log(add10(15))
+
+      //    add10 = function(num){
+      //     let sum = num + 10;
+      //     console.log(sum)
+      //     return sum;
+      //    }
+      //    const sume = add10(40)
+      //    console.log(sume)
+
+      ////
+
+      function downloadFile(fileName, onComplete, onError) {
+        if (fileName.lenght > 5) {
+          onComplete("succes");
+        } else {
+          onError("Error");
+        }
+      }
+
+      downloadFile(
+        "n",
+        function (str) {
+          console.log("OnCoplet", str);
+        },
+        function (str) {
+          console.log("OnError", str);
+        }
+      );
+    </script>
+  </body>
+</html>
