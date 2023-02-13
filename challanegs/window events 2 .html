@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let intervalId = null;
+
+        let listiner = window.addEventListener("load",function(event){
+            console.log("Program rozpoaczął zadanie");
+        })
+        window.addEventListener("resize",function(event){
+            console.log("RESIZE",innerHeight, innerWidth, intervalId)
+            intervalId++
+        })
+        window.addEventListener("focus",function(){
+            console.log("okno uzyskało focus")
+        })
+
+        window.onblur = function(){
+            
+        }
+
+
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

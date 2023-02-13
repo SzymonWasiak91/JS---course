@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //listener
+      window.addEventListener("online", function (event) {
+        console.log("online: uzyskanie dostepu do internetu");
+      });
+      //handler
+      window.ononline = function (event) {
+        console.log("ononline: uzyskanie dostępu do internetu");
+      };
+      //listener
+      window.addEventListener("offline", function () {
+        console.log("ofline: utracono dostęp do internetu");
+      });
+      //hander
+      window.onoffline = function () {
+        console.log("onoflinje: utracono dostep do internetu");
+      };
+      //listener
+      window.addEventListener("focus", function () {
+        console.log("focus: kliknięto no okno");
+      });
+      //hander
+      window.onfocus = function () {
+        console.log("onfocus: kliknieto na okno przegladarki");
+      };
+       //listener
+       window.addEventListener("blur", function () {
+        console.log("blur: utracono okno przegladarki");
+      });
+      //hander
+      window.onblur = function () {
+        console.log("onblur: utracono okno przegladarki");
+      };
+       //listener
+       window.addEventListener("resize", function () {
+        console.log("resize",innerHeight, innerWidth);
+      });
+      //hander
+      window.onload = function () {
+        console.log("onload: start strony");
+      };
+    </script>
+  </body>
+</html>
