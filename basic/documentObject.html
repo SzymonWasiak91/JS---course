@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .current-page {
+            font-weight: bold;
+            background: yellow;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li class = "menu-item current-page">Home</li>
+        <li class = "menu-item">Projects</li>
+        <li class = "menu-item">Contact</li>
+    </ul>
+    <article id = "news">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi aperiam nemo libero consectetur esse suscipit. Perferendis, nihil, voluptatum deleniti odio iste veritatis inventore tempore temporibus saepe, earum delectus veniam pariatur!
+        </p>
+    </article>
+
+    <script>
+
+let currentPage = document.querySelector("li.current-page");
+        console.log(currentPage)
+        currentPage.style.fontWeight = "bold"
+
+        let menuItem = document.querySelectorAll("li.menu-item");
+        console.log(menuItem)
+        let newCurrentPage = menuItem[1];
+        newCurrentPage.style.fontWeight="bold"
+
+        console.log(currentPage.classList)
+        currentPage.classList.remove("current-page")
+        newCurrentPage.classList.add("current-page")
+
+        let article = document.getElementById("news");
+        let h1 = document.createElement("h1");
+        h1.innerHTML = "Last News: ";
+        // article.appendChild(h1)
+        
+
+    </script>
+    
+ 
+  
+</body>
+</html>
